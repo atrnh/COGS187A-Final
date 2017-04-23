@@ -1,0 +1,83 @@
+body {
+    background-color: #ecf0f1;
+}
+.nav a {
+    font-size: 130%;
+    color: #1abc9c;
+}
+
+#sidebar > li.active > ul > a:hover > li {
+    text-decoration: none;
+    color: #16a085;
+}
+
+h2, h3, h4 {
+    color: white;
+    background-color: #e74c3c;
+    padding: 3px 0 0 15px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.breaker {
+    height: 2px;
+    width: 70%;
+    margin: auto;
+    background-color: #3498db;
+}
+
+.nav li ul li {
+    font-size: 90%;
+    color: #1abc9c;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.breadcrumb {
+    margin: 1% 0 0 0;
+    background-color: #f39c12;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+.affix-top,.affix{
+	position: static;
+}
+
+@media (min-width: 800px) {
+    #sidebar.affix-top {
+    position: static;
+    margin-top:10%;
+    background-color: #fff;
+    /*border: 2px solid #7f8c8d;*/
+    padding: 9px;
+}
+  
+#sidebar.affix {
+    position: fixed;
+    top:60px;
+    background-color: #fff;
+    /*border: 2px solid #7f8c8d;*/
+    padding: 9px;
+    width: 263px;
+  }
+}
+
+#sidebar .active a {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.col-md-9 {
+    background-color: #fff;
+}

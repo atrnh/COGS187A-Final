@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UCSD Visual Arts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    
+  <!--javascript-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-3 column" style="margin: 2% 0 0 0;">
+			<img src="img/logo.png"/>
+		</div>
+		
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-3 column" id="leftColumn" style="margin: 2% 0 0 0;">
+			<ul class="nav nav-stacked" id="sidebar">
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="pages/about.html">About</a>
+				</li>
+				<li>
+					<a href="pages/education.html">Education</a>
+				</li>
+				<li>
+					<a href="pages/gs.html">Galleries &<br> Studios</a>
+				</li>
+				<li>
+					<a href="pages/gi.html">Get Involved</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-9 column" style="margin: 2% 0 3% 0;">
+			<ul class="breadcrumb">
+				      <li><a href="index.html">Home</a></li>
+			</ul>
+			<div class="carousel slide" id="carousel-3602" style="margin: 1% 0 0 0;"> <!--carousel-->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-3602">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-3602">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-3602">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="http://visarts.ucsd.edu/sites/default/files/imagecache/home_artist_image/Snails-Phel-1.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								<a href="http://visarts.ucsd.edu/events/my-strangest-stranger">My Strangest Stranger</a>
+							</h4>
+							<p>
+								An Exhibition by New York–based Artist Mary Walling Blackburn<br>
+								Opening Reception on Thursday, March 13th, 5:30 - 8:30pm at the University Art Gallery
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="http://media.utsandiego.com/img/photos/2013/12/10/UTI1746931_t540.JPG?fcdc9254ac583bc086128bb79016bfc7c35538df" />
+						<div class="carousel-caption">
+							<h4>
+								<a href="http://www.utsandiego.com/news/2014/Jan/03/faces-watch-2014-visual-arts-sardar-cross-renner/">Three Faces to Watch in Visual Arts</a>
+							</h4>
+							<p>
+								Assistant Professor, Brian Cross, is featured in this article
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="https://scontent-a-pao.xx.fbcdn.net/hphotos-frc1/t1.0-9/1975232_411283449016610_633192114_n.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								<a href="https://www.facebook.com/events/1429894707248793/">Making Strange</a>
+							</h4>
+							<p>
+								Sixth ARTifact Gallery's first ever undergraduate art show curated by undergraduates
+							</p>
+						</div>
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-3602" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-3602" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div> <!--end carousel-->
+			
+			<div class="col-md-6 column">
+			  <h2>Latest Events</h2>
+			  <p>03/13/14 to 05/09/14<br>
+			  11:00am - 5:00pm<br>
+			  <a href="http://visarts.ucsd.edu/events/my-strangest-stranger">My Strangest Stranger: An Exhibition by New York–based Artist Mary Walling Blackburn</a><br>
+			  </p>
+			  <p>03/15/13<br>
+			  7:00pm - 10:00pm<br>
+			  <a href="http://visarts.ucsd.edu/events/mfa-alumni-ft-sixes-and-sevens">MFA Alumni ft. At Sixes and Sevens: An Exhibition of Thirteen Recent UC San Diego MFA Graduates</a></p>
+			</div>
+			
+			<div class="col-md-6 column">
+			  <h2>In The News</h2>
+			  <p><a href="http://visarts.ucsd.edu/news/appreciation-ernest-silva">An appreciation of Ernest Silva</a></p>
+			  <p><a href="http://visarts.ucsd.edu/news/brian-cross-three-faces-watch-visual-art-2014">Brian Cross: Three Faces to Watch in Visual Art in 2014</a></p>
+			  <p><a href="http://visarts.ucsd.edu/news/benjamin-bratton-new-perspectives-whats-wrong-ted-talks">Benjamin Bratton: New Perspectives: What's Wrong with TED Talks</a></p>
+			</div>
+		</div> <!--content col 10-->
+	</div> <!--row clearfix-->
+</div> <!--container-->
+
+
+<!--side sticky bar-->
+<script>
+$('#sidebar').affix({
+      offset: {
+        top: 245
+      }
+});
+
+var $body   = $(document.body);
+var navHeight = $('.navbar').outerHeight(true) + 10;
+
+$body.scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});</script>
+</body>
+</html>

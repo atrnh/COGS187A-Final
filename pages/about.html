@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UCSD Visual Arts About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+    
+  <!--javascript-->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-3 column" style="margin: 2% 0 0 0;">
+			<img src="../img/logo.png"/>
+		</div>
+		
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-3 column" id="leftColumn" style="margin: 2% 0 0 0;">
+			<ul class="nav nav-stacked" id="sidebar">
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="active">
+					<a href="about.html">About</a>
+					<ul class="innera">
+						<a href="#honors"><li class="morenav">Honors &
+						Distinctions</li></a>
+						<a href="#contact"><li class="morenav">Contact Us</li></a>
+					</ul>
+				</li>
+				<li>
+					<a href="education.html">Education</a>
+				</li>
+				<li>
+					<a href="gs.html">Galleries &<br> Studios</a>
+				</li>
+				<li>
+					<a href="gi.html">Get Involved</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-9 column" style="margin: 4% 0 3% 0;">
+			<ul class="breadcrumb">
+				      <li><a href="../index.html" style="color:#bdc3c7;">Home</a></li>
+				      <li><a href="about.html">About</a></li>
+			</ul>
+			
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+			  <h2>about us</h2>
+			  <p>The Visual Arts department at UCSD was founded in 1969 and continues to provide a rigorous arts education to UCSD students.</p>
+			  <p><a href="http://visarts.ucsd.edu/chairs-statement">The Chair's Statement</a> will give you an insight into the Visual Arts department's interdisciplinary approach and its collaborations with researchers working in nanotechnology, materials science, and large-scale structural engineering, exploring new forms of distributed cognition, materials fabrication, sensing, and computer visualization.</p>
+			  <p><a href="http://visarts.ucsd.edu/deans-statement">The Dean's Statement</a> introduces the new Structural and Materials Engineering building and how it provides a new platform for learning and collaboration for the Visual Arts department</p>
+			  <p>Check out the <a href="http://visarts.ucsd.edu/history">history</a> page to browse through a visual history of the Visual Arts department from 1969 to 1996</p>
+			</div> <!--end summary-->
+			</div>
+			
+			
+	<!--start honors-->
+	<div class="row clearfix">
+		<div class="col-md-12 column"><a name="honors"></a>
+			  <h2>honors &amp; distinctions</h2>
+			  <p>The Visual Arts department is an award-winning program, with students and faculty who are consistently honored for their work by the community as well as the larger nation</p>
+			  <p><a href="http://visarts.ucsd.edu/notable_coverage">Here</a> is a list of individuals from the Visual Arts department who have recieved awards or who were honored for their work in the arts.</p>
+			  <p><a href="http://dah.ucsd.edu/about/awards.shtml">This</a> is a list of faculty members from the arts and humanities who have been given awards and honors, including Guggenheim Fellowships, endowments, and even Tony Awards</p>
+		</div> 
+		</div>
+	<!--end honors-->
+		
+<!--start contact-->
+<div class="row clearfix">
+		<div class="col-md-12 column"><a name="contact"></a>
+			  <h2>contact us</h2>
+			  <p>If you wish to contact one of our facutly members, you can find their email addresses, phone numbers, and websites <a href="http://visarts.ucsd.edu/pfaculty">here</a>.</p>
+			  <p>If you wish to contact ou Ph.D or MFA students and candidates, you can find them <a href="http://visarts.ucsd.edu/sphd">here</a>.
+			  <p><a href="http://visarts.ucsd.edu/visitor-information">Here</a> is the contact information for the main office</p>
+		</div>
+	 <!--end contact us-->
+		</div>	
+			
+	
+</div> <!--content col 10-->	
+</div> <!--container-->
+
+
+<!--side sticky bar-->
+<script>
+$('#sidebar').affix({
+      offset: {
+        top: 245
+      }
+});
+
+var $body   = $(document.body);
+var navHeight = $('.navbar').outerHeight(true) + 10;
+
+$body.scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});</script>
+</body>
+</html>

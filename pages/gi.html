@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UCSD Visual Arts About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+    
+  <!--javascript-->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-3 column" style="margin: 2% 0 0 0;">
+			<img src="../img/logo.png"/>
+		</div>
+		
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-3 column" id="leftColumn" style="margin: 2% 0 0 0;">
+			<ul class="nav nav-stacked" id="sidebar">
+				<li>
+					<a href="../index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="education.html">Education</a>
+				</li>
+				<li>
+					<a href="gs.html">Galleries &<br> Studios</a>
+				</li>
+				<li class="active">
+					<a href="gi.html">Get Involved</a>
+                                        <ul class="innera">
+						<a href="#orgs"><li class="morenav">Student Organizations</li></a>
+						<a href="#jobs"><li class="morenav">Job Opportunities</li></a>
+						<a href="#support"><li class="morenav">Support</li></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-9 column" style="margin: 4% 0 3% 0;">
+			<ul class="breadcrumb">
+				      <li><a href="../index.html" style="color:#bdc3c7;">Home</a></li>
+				      <li><a href="gi.html">Get Involved</a></li>
+			</ul>
+	
+        <div class="row clearfix"> <!--start summary and quick links-->
+			<div class="col-md-12 column">
+			  <!--summary-->
+			  <h2>get involved</h2>
+			  <p>Join the visual arts community by getting involved with a student organization, volunteering at events, working with us, or supporting us with a generous donation.</p>
+			  </div>
+			
+			
+			</div> <!--end summary and quicklinks-->
+		
+	<div class="row clearfix"> <!--start orgs-->
+		<div class="col-md-12 column"><a name="orgs"></a>
+			  <h3>student organization</h3>
+			  <p>There are many different student organizations that are related to visual arts on campus.</p>
+			  <p><a href="http://gamedev.ucsd.edu/">The Video Game Development Club</a> is a group of students at UC San Diego who are interested in video game development as a hobby or career. They are a unique club that allows people from a wide variety of fields to work and play together, and in the process be able to practice and learn new skills and and most importantly, make video games.</p>
+			  <p><a href="http://ucsdvpc.wordpress.com/">The Video Production Club</a> is a Sixth College organization, but they take anyone and everyone from all colleges and majors. They organize film-related activities for club members as well as film Sixth College events. They also create films for organizations on campus.</p>
+			  <p><a href="http://www.ucsdphotoclub.com/">The UCSD Photo Club</a> is an organization dedicated to photograpy.</p>
+			  <p><a href="http://smai-ucsd.blogspot.com/">The Students Make Art Initiative</a> is an organization for artists. Its goals are to create a community and an environment to facilitate collaborations between artists on campus.</p>
+		</div>
+	</div> <!--end orgs-->
+
+	
+	<div class="row clearfix"> <!--start jobs-->
+		<div class="col-md-12 column"><a name="mandeville"></a>
+			  <h3>jobs</h3>
+			  <p>Jobs are posted online at <a href="https://ucsd-csm.symplicity.com/students/">Port Triton</a>. There, you can search for jobs pertaining to the arts.</p>
+			  <p>You can also find jobs on the visual arts <a href="http://visarts.ucsd.edu/temporary-lecturer">recruitment page.</a></p>
+		</div>
+	</div> <!--end  jobs-->
+	
+	<div class="row clearfix"> <!--start support-->
+		<div class="col-md-12 column"><a name="support"></a>
+			  <h3>support</h3>
+			  <p>Your gifts are needed to help promising graduate students study and pioneer new creative territory. By offering competitive fellowships, scholarships, and awards, the Department of Visual Arts will be able to encourage and enable talented scholars and artists to excel. Your gifts will provide the opportunity to establish a lasting legacy at UC San Diego. Visit <a href="http://visarts.ucsd.edu/scholarships-and-fellowships">this page</a> for more information. </p> 
+			  <p>At UC San Diego, endowed faculty chairs are teaching/research positions occupied by distinguished scholars. Although state funds provide basic faculty salaries, permanent endowed funds created by philanthropic gifts support chair-holders' teaching and research. The establishment of an endowed chair supports UCSD's faculty excellence. Your endowment creates perpetual funds that provide an annual income to support exceptional faculty members. For more information about these gift opportunities, <a href="http://visarts.ucsd.edu/endowed-faculty-chairs">click here</a>.</p>
+		</div>
+	</div> <!--end support-->
+		
+</div> <!--col 9-->	
+</div> <!--content col 10-->	
+</div> <!--container-->
+
+
+<!--side sticky bar-->
+<script>
+$('#sidebar').affix({
+      offset: {
+        top: 245
+      }
+});
+
+var $body   = $(document.body);
+var navHeight = $('.navbar').outerHeight(true) + 10;
+
+$body.scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});</script>
+</body>
+</html>
